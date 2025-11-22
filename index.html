@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="2.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#cadapiadapio">Cardápio</a></li>
-                <li><a href="#quem">Quem somos</a></li>
-                <li><a href="#noticias">Noticias</a></li>
-            </ul>
+         <img src="imagem/1.jpg" alt="logo" class="logo">
+       
+         <nav class="menu">
+           
+                  <a href="index.html">Home</a><br>
+                  <a href="sobre.html">Sobre Nós</a><br>
+                 <a href="cardapio.html">Cardápio</a><br>
+                 <a href="contato.html">Noticias</a><br>
+                <a href="contato.html">Contato</a><br>
+                
         </nav>
+        <div class="content">
+            <span id="menub" class="material-symbols-outlined" onclick="clickmunubb()" >menu</span>
+        </div>
+
     </header>
+    <main>
+        <img src="imagem/2.jpg" alt="">
+            Fresco
+            ESPECIALIDADES ITALIANAS
+            Comida boa | Bom vinho
+    </main>
+    <script>
+        function clickmunubb(){
+            var menu = document.querySelector('.menu');
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
